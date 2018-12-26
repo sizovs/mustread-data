@@ -1,0 +1,14 @@
+---
+book:
+  isbn: 9781934356852
+  description: | 
+    Lean from the Trenches is all about actual practice.
+
+    Find out how the Swedish police combined XP, Scrum, and Kanban in a 60-person project. From start to finish, you'll see how to deliver a successful product using Lean principles.
+
+    We start with an organization in desperate need of a new way of doing things and finish with a group of sixty, all working in sync to develop a scalable, complex system. You'll walk through the project step by step, from customer engagement, to the daily "cocktail party," version control, bug tracking, and release. In this honest look at what works--and what doesn't--you'll find out how to: 
+    Make quality everyone's business, not just the testers. Keep everyone moving in the same direction without micromanagement. Use simple and powerful metrics to aid in planning and process improvement. Balance between low-level feature focus and high-level system focus. 
+    You'll be ready to jump into the trenches and streamline your own development process.
+  tags:
+    - management
+    - agile

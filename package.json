@@ -1,0 +1,25 @@
+{
+  "name": "data.for.mustread.tech",
+  "description": "Data for mustread.tech",
+  "version": "1.0.0",
+  "author": "Eduards Sizovs <eduards@sizovs.net>",
+  "private": true,
+  "scripts": {
+    "start": "babel . --out-dir ./build --ignore 'node_modules' && node ./build/indexAll.js"
+  },
+  "dependencies": {
+    "algoliasearch": "^3.32.0",
+    "axios": "^0.18.0",
+    "babel-register": "^6.26.0",
+    "cheerio": "^1.0.0-rc.2",
+    "dayjs": "^1.7.8",
+    "js-yaml": "^3.12.0",
+    "xml-js": "^1.6.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "cross-env": "^5.1.3"
+  }
+}
