@@ -24,9 +24,6 @@
                             .map(readFileUtf8)
                             .map(yaml.load)
     
-
-    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
-
     contributions.forEach(async contribution => {
     // contributions.filter(c => c.book.isbn == '9781934356852').forEach(async contribution => {
         const { isbn, description, tags } = contribution.book
@@ -53,7 +50,6 @@
             }
 
             await index.saveObject(book)
-            // await sleep(1000)
         } catch (e) {
             console.error(`😵 Sorry, things went wrong at ${isbn}.`, e)
         }
