@@ -18,16 +18,17 @@
     const algolia = algoliasearch(process.env.ALGOLIA_APP_ID, process.env.ALGOLIA_API_KEY)
     const index = algolia.initIndex(process.env.ALGOLIA_INDEX_NAME)
 
-    const fileNames = await globAsync('./books/*.yml')
+    const generateStats = require("./generateStats")
+    const generateFeed = require("./generateFeed")
+    const store = require('./store')
     
-    const contributions = fileNames
-                            .map(readFileUtf8)
-                            .map(yaml.load)
-    
-    contributions.forEach(async contribution => {
-    // contributions.filter(c => c.book.isbn == '9781934356852').forEach(async contribution => {
+    const contributedFiles = (await globAsync('books/*.yml'))
+                                    .map(contributedFile => [contributedFile, readFileUtf8(contributedFile)])
+                                    .map(([contributedFile, content]) => ({...yaml.load(content), location: contributedFile}) )
+              
+    const outIfNeeded = c => true
+    const booksInFuture = contributedFiles.filter(outIfNeeded).map(async contribution => {
         const { isbn, description, tags } = contribution.book
-        
         try {
             
             const goodreads = await require('./fetch/goodreads')(isbn)
@@ -36,7 +37,9 @@
 
             const book = {
                 objectID: isbn,
+                isbn: isbn,
                 about: tags,
+                location: contribution.location,
                 title: goodreads.title,
                 description: description || goodreads.description || gbooks.description,
                 ratingCount: goodreads.ratingCount,
@@ -49,10 +52,21 @@
                 year: goodreads.year || gbooks.year
             }
 
-            await index.saveObject(book)
+            return book
         } catch (e) {
-            console.error(`😵 Sorry, things went wrong at ${isbn}.`, e)
+            console.error(`😵 Sorry, things went fetching ${isbn}.`, e)
+            return undefined
         }
     })
+
+    
+    
+    const books = (await Promise.all(booksInFuture)).filter(book => book)
+    await index.saveObjects(books)
+
+    const stats = await generateStats(books)
+    const feed = await generateFeed(books)
+    
+    await store(stats, feed)
 })()
 

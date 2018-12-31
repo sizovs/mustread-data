@@ -1,3 +1,5 @@
 build
 node_modules
 .envrc
+googleServiceAccount.json
+stats.json
