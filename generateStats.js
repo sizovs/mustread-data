@@ -8,7 +8,7 @@ module.exports = books =>
         .all(books
             .map(book => 
                     new GitFile(book.location)
-                    .revs(1)
+                    .revs()
                     .then(([firstRev]) => {
                         let isbn = book.objectID
                         if (!firstRev) {

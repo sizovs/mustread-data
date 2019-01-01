@@ -14,9 +14,8 @@ const toBook = it => ({
     link: it.link._cdata,
     authors: alwaysArray(it.authors.author).map($ => $.name._text)
 })
-
-module.exports = isbn => axios
-                            .get(`https://www.goodreads.com/book/isbn/${isbn}?key=${process.env.GOODREADS_API_KEY}`)
+module.exports = (isbn, grid) => axios
+                            .get(`https://www.goodreads.com/book/${grid ? 'show/' + grid : 'isbn/' + isbn }?key=${process.env.GOODREADS_API_KEY}`)
                             .then(response => convert.xml2js(response.data, { compact: true, nativeType: true, ignoreDeclaration: true }))
                             .then(body => body.GoodreadsResponse.book)
                             .then(toBook)

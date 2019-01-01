@@ -28,10 +28,10 @@
               
     const outIfNeeded = c => true
     const booksInFuture = contributedFiles.filter(outIfNeeded).map(async contribution => {
-        const { isbn, description, tags } = contribution.book
+        const { isbn, grid, description, tags } = contribution.book
         try {
             
-            const goodreads = await require('./fetch/goodreads')(isbn)
+            const goodreads = await require('./fetch/goodreads')(isbn, grid)
             const gbooks = await require('./fetch/gbooks')(isbn)
             const cover = await require('./fetch/cover')(goodreads.link)
 

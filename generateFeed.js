@@ -18,7 +18,7 @@ module.exports = books =>
         .all(books
             .map(book => 
                     new GitFile(book.location)
-                    .revs(1)
+                    .revs()
                     .then(([firstRev]) => {
                         if (!firstRev) {
                             console.warn('😵 Cannot get git history of ' + book.location)
@@ -33,9 +33,9 @@ module.exports = books =>
             .filter(stat => stat)
             .reduce((feed, book) => {
                 feed.addItem({
-                    id: book.objectID,
+                    id: "http://mustread.tech/books/isbn/" + book.objectID,
                     date: book.added,
-                    link: "http://mustread.tech/books/isbn/" + book.objectID, 
+                    link: "http://mustread.tech/books/isbn/" + book.objectID,
                     title: "Must-read book: " + book.title,
                     description: book.description.slice(0, 256) + "..."
                 })
