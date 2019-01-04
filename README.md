@@ -40,7 +40,7 @@ book:
     ... 
 ```
 
-2) [Create a new file under `/books/<Book Title.yml`](https://github.com/sizovs/mustread-data/new/master/books?filename=Book%20Title.yml&value=%23%20Paste%20the%20book%20template%20here&description=Adding%20%20Book%20Title.%20I%20think%20it%27s%20a%20must-read%20because...&message=Added%20Book%20Title)
+2) [Create a new file under `/books/<Book Title.yml>`](https://github.com/sizovs/mustread-data/new/master/books?filename=Book%20Title.yml&value=%23%20Paste%20the%20book%20template%20here&description=Adding%20%20Book%20Title.%20I%20think%20it%27s%20a%20must-read%20because...&message=Added%20Book%20Title)
 3) Paste the book template
 4) Populate the book template with correct data
 5) Commit, push 🚀
