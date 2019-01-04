@@ -55,7 +55,7 @@
 
             return book
         } catch (e) {
-            console.error(`😵 Sorry, things went fetching ${isbn}.`, e)
+            console.error(`😵 Sorry, things went wrong while fetching ${isbn}.`, e)
             return undefined
         }
     })
