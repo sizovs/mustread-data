@@ -4,6 +4,10 @@ branches:
   only:
    - master
 
+cache:
+  directories:
+    - node_modules
+
 env:
   global:
     # algolia api
