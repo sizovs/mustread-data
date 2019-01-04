@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/sizovs/mustread-data.svg?branch=master)](https://travis-ci.org/sizovs/mustread-data)
 
 # Contribution guidelines
 
