@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9780321127426
+  kudo: eduardsi
+  isbn: '9780321127426'
   tags:
       - architecture

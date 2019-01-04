@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9780201485677
+  kudo: eduardsi
+  isbn: '9780201485677'
   tags:
     - coding

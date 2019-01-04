@@ -1,7 +1,13 @@
 ---
 book:
-  isbn: 9781944823009
-  grid: 31183020
+  kudo: eduardsi
+  isbn: '9781944823009'
+  grid: '31183020'
   tags:
     - coding
     - ruby
+  about: |
+    99 Bottles of OOP is a practical guide to writing cost-effective, maintainable, and pleasing object-oriented code. 
+    
+    It teaches the theory of what good OO looks like, but even better, it supplies step-by-step guidance about how to achieve it.
+    

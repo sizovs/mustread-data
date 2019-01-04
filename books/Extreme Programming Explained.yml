@@ -1,5 +1,8 @@
 ---
 book:
-  isbn: 9780321278654
+  kudo: eduardsi
+  isbn: '9780321278654'
   tags:
     - general
+  about: |
+    In this second edition of Extreme Programming Explained, Kent Beck organizes and presents five years' worth of experiences, growth, and change revolving around XP. If you are seriously interested in understanding how you and your team can start down the path of improvement with XP, you must read this book.

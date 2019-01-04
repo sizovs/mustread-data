@@ -1,7 +1,8 @@
 ---
 book:
-  isbn: 9781934356852
-  description: | 
+  kudo: eduardsi
+  isbn: '9781934356852'
+  about: | 
     Lean from the Trenches is all about actual practice.
 
     Find out how the Swedish police combined XP, Scrum, and Kanban in a 60-person project. From start to finish, you'll see how to deliver a successful product using Lean principles.

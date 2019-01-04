@@ -1,0 +1,14 @@
+language: node_js
+
+branches:
+  only:
+   - master
+
+env:
+  - GOOGLE_APPLICATION_CREDENTIALS=$TRAVIS_BUILD_DIR/googleServiceAccount.json
+
+before_install:
+  - npm i yarn -g 
+
+script:
+  - yarn index

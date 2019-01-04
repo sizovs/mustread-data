@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9780984521401
+  kudo: eduardsi
+  isbn: '9780984521401'
   tags:
     - management
     - agile

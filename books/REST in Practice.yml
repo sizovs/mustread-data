@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9780596805821
+  kudo: eduardsi
+  isbn: '9780596805821'
   tags:
     - web

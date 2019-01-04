@@ -28,20 +28,21 @@
               
     const outIfNeeded = c => true
     const booksInFuture = contributedFiles.filter(outIfNeeded).map(async contribution => {
-        const { isbn, grid, description, tags } = contribution.book
+        const { isbn, grid, about, tags, kudo } = contribution.book
         try {
             
             const goodreads = await require('./fetch/goodreads')(isbn, grid)
             const gbooks = await require('./fetch/gbooks')(isbn)
             const cover = await require('./fetch/cover')(goodreads.link)
-
             const book = {
                 objectID: isbn,
                 isbn: isbn,
+                asin: goodreads.asin,
+                kudo: kudo,
                 about: tags,
                 location: contribution.location,
                 title: goodreads.title,
-                description: description || goodreads.description || gbooks.description,
+                description: about || goodreads.description || gbooks.description,
                 ratingCount: goodreads.ratingCount,
                 ratingAvg: goodreads.ratingAvg,
                 reviewCount: goodreads.reviewCount,
@@ -58,8 +59,6 @@
             return undefined
         }
     })
-
-    
     
     const books = (await Promise.all(booksInFuture)).filter(book => book)
     await index.saveObjects(books)

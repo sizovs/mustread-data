@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781491919019
+  kudo: eduardsi
+  isbn: '9781491919019'
   tags:
     - product development

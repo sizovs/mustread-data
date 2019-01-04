@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9780321718990
+  kudo: eduardsi
+  isbn: '9780321718990'
   tags:
     - agile
     - management

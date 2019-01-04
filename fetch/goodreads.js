@@ -12,6 +12,7 @@ const toBook = it => ({
     ratingAvg: it.average_rating._text,
     reviewCount: it.work.text_reviews_count._text,
     link: it.link._cdata,
+    asin: it.isbn._cdata,
     authors: alwaysArray(it.authors.author).map($ => $.name._text)
 })
 module.exports = (isbn, grid) => axios

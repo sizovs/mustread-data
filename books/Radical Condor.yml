@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781250103505
+  kudo: eduardsi
+  isbn: '9781250103505'
   tags:
     - management

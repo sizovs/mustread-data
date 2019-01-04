@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9781534908307
+  kudo: eduardsi
+  isbn: '9781534908307'
   tags:
     - coding
     - java

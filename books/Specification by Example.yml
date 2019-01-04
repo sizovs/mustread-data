@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781617290084
+  kudo: eduardsi
+  isbn: '9781617290084'
   tags:
     - product development

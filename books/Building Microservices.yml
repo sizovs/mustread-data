@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781491950357
+  kudo: eduardsi
+  isbn: '9781491950357'
   tags:
     - architecture

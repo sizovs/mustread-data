@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 0785342200683
+  kudo: eduardsi
+  isbn: '0785342200683'
   tags:
     - architecture

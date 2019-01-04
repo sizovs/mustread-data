@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9781449368425
+  kudo: eduardsi
+  isbn: '9781449368425'
   tags:
     - agile
     - management

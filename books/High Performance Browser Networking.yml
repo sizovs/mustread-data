@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781449344764
+  kudo: eduardsi
+  isbn: '9781449344764'
   tags:
     - web

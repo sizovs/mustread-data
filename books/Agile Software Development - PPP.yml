@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9780135974445
+  kudo: eduardsi
+  isbn: '9780135974445'
   tags:
     - coding
     - agile

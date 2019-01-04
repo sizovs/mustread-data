@@ -5,7 +5,7 @@
   "author": "Eduards Sizovs <eduards@sizovs.net>",
   "private": true,
   "scripts": {
-    "start": "babel . --out-dir ./build --ignore 'node_modules','build' && node ./build/indexAll.js"
+    "index": "babel . --out-dir ./build --ignore 'node_modules','build' && node ./build/indexAll.js"
   },
   "dependencies": {
     "@google-cloud/storage": "^2.3.4",

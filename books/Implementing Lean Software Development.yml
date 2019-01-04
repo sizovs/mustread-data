@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9780321437389
+  kudo: eduardsi
+  isbn: '9780321437389'
   tags:
     - management
     - agile

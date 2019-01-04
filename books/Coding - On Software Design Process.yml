@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9780615404820
+  kudo: eduardsi
+  isbn: '9780615404820'
   tags:
     - coding

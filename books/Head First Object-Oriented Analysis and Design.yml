@@ -1,5 +1,12 @@
 ---
 book:
-  isbn: 9780596008673
+  kudo: eduardsi
+  isbn: '9780596008673'
   tags:
     - coding
+  about: |
+    Head First Object-Oriented Analysis & Design shows you how to analyze, design, and write serious object-oriented software: software that's easy to reuse, maintain, and extend; software that doesn't hurt your head; software that lets you add new features without breaking the old ones. Inside you will learn how to:
+    
+    Use OO principles like encapsulation and delegation to build applications that are flexible Apply the Open-Closed Principle (OCP) and the Single Responsibility Principle (SRP) to promote reuse of your code Leverage the power of design patterns to solve your problems more efficiently Use UML, use cases, and diagrams to ensure that all stakeholders are communicating clearly to help you deliver the right software that meets everyone's needs.
+
+    By exploiting how your brain works, Head First Object-Oriented Analysis & Design compresses the time it takes to learn and retain complex information. Expect to have fun, expect to learn, expect to be writing great software consistently by the time you're finished reading this!

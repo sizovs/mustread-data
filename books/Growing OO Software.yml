@@ -1,6 +1,7 @@
 ---
 book:
-  isbn: 9780321503626
+  kudo: eduardsi
+  isbn: '9780321503626'
   tags:
     - coding
     - testing

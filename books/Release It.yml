@@ -1,5 +1,6 @@
 ---
 book:
-  isbn: 9781680502398
+  kudo: eduardsi
+  isbn: '9781680502398'
   tags:
     - architecture
