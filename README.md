@@ -50,3 +50,19 @@ book:
 1) Visit [Goodreads](https://goodreads.com)
 2) Find the book by name or book's author
 3) See book's ISBN13
+
+## The best books for developers
+- [Agile](https://mustread.tech/books/about/agile)
+- [Coding and Programming](https://mustread.tech/books/about/coding)
+- [Communication](https://mustread.tech/books/about/communication)
+- [General Software Development](https://mustread.tech/books/about/general)
+- [Java](https://mustread.tech/books/about/java)
+- [JavaScript](https://mustread.tech/books/about/javascript)
+- [Leadership and Management](https://mustread.tech/books/about/management)
+- [Operating Systems](https://mustread.tech/books/about/operating~systems)
+- [Product Development](https://mustread.tech/books/about/product~development)
+- [Ruby](https://mustread.tech/books/about/ruby)
+- [Software Architecture](https://mustread.tech/books/about/architecture)
+- [Testing and Quality Assurance](https://mustread.tech/books/about/testing)
+- [Thinking](https://mustread.tech/books/about/thinking)
+- [Web Technologies](https://mustread.tech/books/about/web)
