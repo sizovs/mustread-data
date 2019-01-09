@@ -1,0 +1,12 @@
+---
+book:  
+  isbn: '9780990702801'
+  
+  tags:
+    - coding
+    - management
+
+  kudo: edvinsantonovs
+
+  about: |
+    11 simple practices a software engineer can apply to be more a more effective contributor and more productive team member. Included are personal processes for fixing bugs and implementing new features, tips for writing, interviewing, and time management, as well as guides for bootstrapping new projects, making technical arguments, and leading a team.
