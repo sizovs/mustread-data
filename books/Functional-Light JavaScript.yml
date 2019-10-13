@@ -1,0 +1,9 @@
+---
+book:
+  kudo: heinhtetzaw_
+  isbn: '9781981672349'
+  tags:
+    - javascript
+  about: |
+    Functional-Light JavaScript is a balanced, pragmatic exploration of Functional Programming in JavaScript.
+    Functional Programming (FP) is an incredibly powerful paradigm for structuring code that yields more robust, verifiable, and readable programs.
