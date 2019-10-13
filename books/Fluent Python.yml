@@ -1,0 +1,8 @@
+---
+book:
+  kudo: rushigajaria
+  isbn: '9781491946008'
+  tags:
+    - python
+  about: |
+    An intermediate level look at Python that helps you write cleaner, more Pythonic code. Covers Python data model, Data structures, Functions as objects, Object-oriented idioms, Control flow, and Metaprogramming
