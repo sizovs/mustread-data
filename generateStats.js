@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 const GitFile = require('./classes/GitFile')
 
 const commitMonth = rev => dayjs(rev.commit.date()).format('MMMM')
+const commitYear = rev => dayjs(rev.commit.date()).format('YYYY')
 
 module.exports = books => 
     Promise
@@ -15,7 +16,7 @@ module.exports = books =>
                             console.warn('😵 Cannot get git history of ' + book.location)
                             return undefined
                         } else {
-                            return { isbn: isbn.toString(), month: commitMonth(firstRev) }
+                            return { isbn: isbn.toString(), month: commitMonth(firstRev), year: commitYear(firstRev) }
                         }
                     })
                 )
@@ -23,6 +24,6 @@ module.exports = books =>
         .then(stats => stats
             .filter(stat => stat)
             .reduce((acc, curr) => 
-                Object.assign(acc, {[curr.month]: [curr.isbn].concat(acc[curr.month] || [])}), {}
+                Object.assign(acc, {[curr.year + "/" + curr.month]: [curr.isbn].concat(acc[curr.year + "/" + curr.month] || [])}), {}
             ))
         .then(JSON.stringify)
