@@ -10,7 +10,7 @@
   "dependencies": {
     "@google-cloud/storage": "^2.3.4",
     "algoliasearch": "^3.32.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-register": "^6.26.0",
     "cheerio": "^1.0.0-rc.2",
     "dayjs": "^1.7.8",
